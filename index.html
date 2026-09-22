@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUNIOR-PRO-256 — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader">
+  <div class="loader-terminal">
+    <span class="prompt">junior-pro~$</span> <span id="loaderText"></span><span class="type-cursor">|</span>
+  </div>
+</div>
+
+
+
+<header class="site-header">
+  <nav class="nav">
+    <span class="logo">W.J* WEB DEV|MOBILE DEV|SOFTWARE DEV<span class="cursor">*</span></span>
+    <ul class="nav-links">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">
+        <span class="theme-icon theme-icon-dark">🌙</span>
+        <span class="theme-icon theme-icon-light">☀️</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-photo">
+      <img src="images/photo.png" alt="Photo of Wafutu Junior" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+    </div>
+    <div class="hero-text">
+      <h1>Hi, I'm Wafutu Junior — a software Enginnering student at Uganda Institute of information and communication technology.</h1>
+      <p class="hero-sub">I am passionate about programming, Web development, Mobile application development and building practical software solutions. I enjoy turning ideas into projects that people can actually use.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See the work</a>
+        <a href="resume.pdf" download class="btn btn-ghost">Download résumé</a>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <h2>About</h2>
+      
+    </div>
+    <div class="about-grid">
+      <p class="about-lead">
+        I'm Wafutu Junior, a software Engineering student at Uganda Institute of Information and communication technology with a strong interest in programming, web development, mobile application development,
+        and building practical software solutions. I enjoy exploring new technologies, solving problems through code, and turning ideas into
+        into useful applications <br>
+        Through my studies and personal projects, I am developing my skills in software development, databases, web technologies, and software engineering best practices.
+        I am passionate about about continuous learning and enjoy transforming what i learn into projects that can solve real-world problems and create value for users.
+        <p style="font-weight: bold;">I have developing skills in programming, web development, Database management, and software design. I am confortable applying programming concepts to build functional applications, creating responsive and user-friendly web interfaces, designing and working with databases 
+          and using software enginnering principles to structure and develop reliable solutions.
+          I am continuously improving my techninical skills through projects and practical problem-solving.
+        </p>
+      </p>
+      <ul class="about-facts">
+        <li><span class="fact-label">Based</span><span>Uganda</span></li>
+        <li><span class="fact-label">Studying</span><span>Software Engineering</span></li>
+        <li><span class="fact-label">School</span><span>UICT</span></li>
+        <li><span class="fact-label">Focus</span><span>Full-stack web, Mobile app dev &amp; databases</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+      
+    </div>
+    <div class="skills-list">
+      <div class="skill-row">
+        <span class="skill-name">HTML &amp; CSS</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Databases (SQL)</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Backend (Node / Flask)</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Git &amp; GitHub</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Mobile App Dev</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <div class="section-head">
+      <h2>Gallery</h2>
+      <span class="index">03</span>
+    </div>
+    <p class="gallery-note"></p>
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="images/ams.jpeg" alt="CampusTrack dashboard screenshot" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+        <figcaption>CampusTrack — attendance management sys</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/school.jpeg" alt="ExamVault app screenshot" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+        <figcaption>SCHOOL WEBSITE — website</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/calc.jpeg" alt="Zamzam report card system screenshot" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+        <figcaption>CALCULATOR</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/expense.jpeg" alt="Zamzam report card system screenshot" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+        <figcaption>EXPENSE TRUCKER</figcaption>
+      </figure
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <span class="index">04</span>
+    </div>
+    <div class="project-list">
+
+      <article class="project-row">
+        <div class="project-info">
+          <h3>ATTENDANCE MANAGEMENT SYSTEM</h3>
+          <p>Student attendance management system with geolocation-restricted login and JWT auth.</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span></div>
+        </div>
+        <a href="https://attendance-management-sable-gamma.vercel.app/" class="project-link">View →</a>
+      </article>
+
+      <article class="project-row">
+        <div class="project-info">
+          <h3>CALCULATOR</h3>
+          <p>Mobile app for an institutional exam paper archive.</p>
+          <div class="tags"><span>Flutter</span><span>Supabase</span></div>
+        </div>
+        <a href="https://calculator-one-woad-11.vercel.app/" class="project-link">View →</a>
+      </article>
+
+      <article class="project-row">
+        <div class="project-info">
+          <h3>SCHOOL WEBSITE</h3>
+          <p>Full-stack website</p>
+          <div class="tags"><span>css</span><span>javascript</span></div>
+        </div>
+        <a href="https://bubutu-ss.vercel.app/" class="project-link">View →</a>
+      </article>
+
+      <article class="project-row">
+        <div class="project-info">
+          <h3>Rural Health Referral System</h3>
+          <p>Coursework proposal for coordinating rural health referrals and ambulance dispatch.</p>
+          <div class="tags"><span>Group project</span><span>Proposal</span></div>
+        </div>
+        <a href="https://junior-pro-256.github.io/referral-system/" class="project-link">View →</a>
+      </article>
+       <article class="project-row">
+        <div class="project-info">
+          <h3>money converter mobile app</h3>
+          <p>demonstrating use of dart languanges </p>
+          <div class="tags"><span>mobile app</span><span></span></div>
+        </div>
+        <a href="https://github.com/junior-pro-256/currency_converter-app" class="project-link">View →</a>
+      </article>
+      article class="project-row">
+        <div class="project-info">
+          <h3>country finder</h3>
+          <p>Full-stack website</p>
+          <div class="tags"><span>css</span><span>html</span><span>node and express</span><span>javascript</span></div>
+        </div>
+        <a href="https://country-finder-jade.vercel.app/" class="project-link">View →</a>
+      </article>
+      <article class="project-row">
+        <div class="project-info">
+          <h3>LIVE CHAT</h3>
+          <p>Full-stack web application</p>
+          <div class="tags"><span>css</span><span>html</span><span>node and express</span><span>javascript</span></div>
+        </div>
+        <a href="https://mylivechat-sigma.vercel.app/" class="project-link">View →</a>
+      </article>
+      <article class="project-row">
+        <div class="project-info">
+          <h3>E-COMMERCE</h3>
+          <p>Full-stack web application</p>
+          <div class="tags"><span>css</span><span>html</span><span>javascript</span></div>
+        </div>
+        <a href="https://e-commerce-theta-nine-96.vercel.app/" class="project-link">View →</a>
+      </article>
+       <article class="project-row">
+        <div class="project-info">
+          <h3>FROM VALIDATOR</h3>
+          <p>Full-stack web application</p>
+          <div class="tags"><span>css</span><span>html</span><span>javascript</span></div>
+        </div>
+        <a href="https://validator-black.vercel.app/" class="project-link">View →</a>
+      </article>
+      <article class="project-row">
+        <div class="project-info">
+          <h3>EXPENSE TRACKER</h3>
+          <p>Full-stack web application</p>
+          <div class="tags"><span>css</span><span>html</span><span>javascript</span></div>
+        </div>
+        <a href="https://expense-tracker-umber-one-90.vercel.app/" class="project-link">View →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <span class="index">05</span>
+    </div>
+    <div class="contact-grid">
+      <p class="contact-lead">Have a project, a bug you can't figure out, or just want to talk databases? My inbox is open.</p>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="social-icons">
+    <a href="https://github.com/junior-pro-256" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+    </a>
+    <a href="https://linkedin.com/wafutu junior" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="blue"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+    </a>
+    <a href="mailto:wafutujunior7@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="red"><path d="M1.5 4.5A1.5 1.5 0 0 1 3 3h18a1.5 1.5 0 0 1 1.5 1.5v15A1.5 1.5 0 0 1 21 21H3a1.5 1.5 0 0 1-1.5-1.5v-15Zm2.4.5 8.1 6.3L20.1 5H3.9ZM21 6.6l-8.55 6.65a1 1 0 0 1-1.2 0L3 6.6V19h18V6.6Z"/></svg>
+    </a>
+    <a href="https://x.com/Mr x ug" target="_blank" rel="noopener" aria-label="X (Twitter)">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.24 2H21l-6.4 7.32L22.4 22h-6.9l-5.4-7.06L3.9 22H1.1l6.85-7.83L1 2h7.06l4.87 6.44L18.24 2Zm-1.2 18h1.9L7.06 4H5.02l11.02 16Z"/></svg>
+    </a>
+    <a href="https://wa.me/256707651832" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="green">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662a11.87 11.87 0 0 0 5.71 1.454h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+  </svg>
+</a>
+  </div>
+  <p>Built by JUNIOR-PRO-256· <span id="year"></span></p>
+</footer>
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
